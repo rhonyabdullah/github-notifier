@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">Github Notifier</string>
+    <string name="app_name">G.Notifier</string>
+    <string name="login_sign_in">Sign in to Github</string>
+    <string name="login_skip_login">Watch Commit</string>
+    <string name="title_activity_login">Authentication</string>
 </resources>

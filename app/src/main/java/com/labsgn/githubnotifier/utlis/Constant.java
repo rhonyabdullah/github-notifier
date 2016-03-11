@@ -4,17 +4,17 @@ package com.labsgn.githubnotifier.utlis;
  * Created by rhony on 08/03/16.
  */
 public class Constant {
-    public static final String STREAMDATAIO_API_TOKEN = "MWZmZjUxNDktNzkxYi00ODY4LWFmZjktM2JlZmFmOWYyNDNh";
+    public static final String STREAMDATAIO_API_TOKEN = "MY_STREAMDATAIO_API_TOKEN";
     public static final String STREAMDATAIO_PROXY_PREFIX = "https://streamdata.motwin.net/";
 
     //GitHub OAuth client public key
-    public static final String GITHUB_CLIENT_PUBLIC_KEY = "127abc2fddf4d8eb2359";
+    public static final String GITHUB_CLIENT_PUBLIC_KEY = "MY_GITHUB_CLIENT_PUBLIC_KEY";
 
     //GitHub OAuth client secret key
-    public static final String GITHUB_CLIENT_SECRET_KEY = "f50dca8734219ac169cf616636b0ff2fd841bc70";
+    public static final String GITHUB_CLIENT_SECRET_KEY = "MY_GITHUB_CLIENT_SECRET_KEY";
 
     //GitHub access token for public utilization this token allows only to read public repos
-    public static final String GITHUB_PUBLIC_TOKEN = "5f6a0400fb1670d9ea32f276846275f25894fb2b";
+    public static final String GITHUB_PUBLIC_TOKEN = "MY_GITHUB_PUBLIC_TOKEN";
 
     //Host-URI of LoginActivity Web View
     public static final String GITHUB_REDIRECT_URI = "your://redirecturi";

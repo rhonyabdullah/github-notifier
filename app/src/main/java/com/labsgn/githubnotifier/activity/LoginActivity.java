@@ -29,11 +29,10 @@ public class LoginActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        initComponent();
-
-        // Allow connectivity in the main thread
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
+
+        initComponent();
 
         if (getIntent().getBooleanExtra("SIGN_IN", false)) {
             attemptLogin();

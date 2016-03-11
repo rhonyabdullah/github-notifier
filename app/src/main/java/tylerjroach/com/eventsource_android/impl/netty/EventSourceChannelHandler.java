@@ -1,9 +1,4 @@
-package com.labsgn.githubnotifier.eventsource.impl.netty;
-
-import com.labsgn.githubnotifier.eventsource.EventSourceException;
-import com.labsgn.githubnotifier.eventsource.EventSourceHandler;
-import com.labsgn.githubnotifier.eventsource.impl.ConnectionHandler;
-import com.labsgn.githubnotifier.eventsource.impl.EventStreamParser;
+package tylerjroach.com.eventsource_android.impl.netty;
 
 import org.jboss.netty.bootstrap.ClientBootstrap;
 import org.jboss.netty.channel.Channel;
@@ -31,6 +26,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import tylerjroach.com.eventsource_android.EventSourceException;
+import tylerjroach.com.eventsource_android.EventSourceHandler;
+import tylerjroach.com.eventsource_android.impl.ConnectionHandler;
+import tylerjroach.com.eventsource_android.impl.EventStreamParser;
 
 public class EventSourceChannelHandler extends SimpleChannelUpstreamHandler implements ConnectionHandler {
     private static final Pattern STATUS_PATTERN = Pattern.compile("HTTP/1.1 (\\d+) (.*)");

@@ -3,4 +3,12 @@
     <string name="login_sign_in">Sign in to Github</string>
     <string name="login_skip_login">Watch Commit</string>
     <string name="title_activity_login">Authentication</string>
+    <string name="find_repositories_hint">Find repositories…</string>
+    <string name="go">Go</string>
+    <string name="search_button">SearchButton</string>
+    <string name="show_commits">Show Commits</string>
+    <string name="too_many_repos">Too many repos</string>
+    <string name="clear_history">Clear history</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
 </resources>

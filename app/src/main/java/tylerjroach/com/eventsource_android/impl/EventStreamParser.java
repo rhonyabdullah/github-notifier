@@ -1,13 +1,13 @@
-package com.labsgn.githubnotifier.eventsource.impl;
-
-import com.labsgn.githubnotifier.eventsource.EventSourceHandler;
-import com.labsgn.githubnotifier.eventsource.MessageEvent;
+package tylerjroach.com.eventsource_android.impl;
 
 import java.util.regex.Pattern;
 
+import tylerjroach.com.eventsource_android.EventSourceHandler;
+import tylerjroach.com.eventsource_android.MessageEvent;
+
 /**
  * <a href="http://dev.w3.org/html5/eventsource/#event-stream-interpretation">Interprets an event stream</a>
- * and dispatches messages to the {@link com.labsgn.githubnotifier.eventsource.EventSourceHandler}.
+ * and dispatches messages to the {@link tylerjroach.com.eventsource_android.EventSourceHandler}.
  */
 public class EventStreamParser {
     private static final String DATA = "data";

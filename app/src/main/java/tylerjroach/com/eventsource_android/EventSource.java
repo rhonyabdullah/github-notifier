@@ -1,9 +1,6 @@
-package com.labsgn.githubnotifier.eventsource;
+package tylerjroach.com.eventsource_android;
 
 import android.util.Log;
-
-import com.labsgn.githubnotifier.eventsource.impl.AsyncEventSourceHandler;
-import com.labsgn.githubnotifier.eventsource.impl.netty.EventSourceChannelHandler;
 
 import org.jboss.netty.bootstrap.ClientBootstrap;
 import org.jboss.netty.channel.ChannelFuture;
@@ -24,6 +21,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import javax.net.ssl.SSLEngine;
 
+import tylerjroach.com.eventsource_android.impl.AsyncEventSourceHandler;
+import tylerjroach.com.eventsource_android.impl.netty.EventSourceChannelHandler;
+
 public class EventSource implements EventSourceHandler {
     public static final long DEFAULT_RECONNECTION_TIME_MILLIS = 2000;
 
@@ -43,7 +43,7 @@ public class EventSource implements EventSourceHandler {
     /**
      * Creates a new <a href="http://dev.w3.org/html5/eventsource/">EventSource</a> client. The client will reconnect on
      * lost connections automatically, unless the connection is closed explicitly by a call to
-     * {@link com.labsgn.githubnotifier.eventsource.EventSource#close()}.
+     * {@link tylerjroach.com.eventsource_android.EventSource#close()}.
      * <p/>
      * For sample usage, see examples at <a href="https://github.com/aslakhellesoy/eventsource-java/tree/master/src/test/java/com/github/eventsource/client">GitHub</a>.
      *

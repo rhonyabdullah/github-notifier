@@ -1,14 +1,14 @@
-package com.labsgn.githubnotifier.eventsource.stubs;
-
-import com.labsgn.githubnotifier.eventsource.EventSourceHandler;
-import com.labsgn.githubnotifier.eventsource.MessageEvent;
-import com.labsgn.githubnotifier.eventsource.impl.ConnectionHandler;
+package tylerjroach.com.eventsource_android.stubs;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+
+import tylerjroach.com.eventsource_android.EventSourceHandler;
+import tylerjroach.com.eventsource_android.MessageEvent;
+import tylerjroach.com.eventsource_android.impl.ConnectionHandler;
 
 public class StubHandler implements ConnectionHandler, EventSourceHandler {
     private Long reconnectionTimeMillis;

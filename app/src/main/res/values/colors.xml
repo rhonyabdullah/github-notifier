@@ -4,10 +4,13 @@
     <color name="colorPrimaryDark">#0288D1</color>
     <color name="colorPrimaryLight">#B3E5FC</color>
     <color name="colorAccent">#00BCD4</color>
+    <color name="colorError">#F44336</color>
 
     <color name="colorPrimaryText">#727272</color>
     <color name="colorSecondaryText">#FFF</color>
 
     <color name="colorIcons">#FFFFFF</color>
     <color name="colorDivider">#B6B6B6</color>
+
+    <color name="colorBgSearchBox">#DDD</color>
 </resources>

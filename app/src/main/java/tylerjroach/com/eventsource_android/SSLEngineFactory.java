@@ -1,4 +1,4 @@
-package com.labsgn.githubnotifier.eventsource;
+package tylerjroach.com.eventsource_android;
 
 import java.security.KeyManagementException;
 import java.security.NoSuchAlgorithmException;

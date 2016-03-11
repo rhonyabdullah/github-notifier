@@ -1,12 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.labsgn.githubnotifier.activity.MainActivity">
 
-    <include layout="@layout/status_bar"/>
+    <include layout="@layout/status_bar" />
+
+    <carbon.widget.LinearLayout
+        android:id="@+id/mainSearchBox"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_box_height"
+        android:background="@color/colorBgSearchBox"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/mainSearchField"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.98"
+            android:background="@color/colorBgSearchBox"
+            android:hint="@string/find_repositories_hint"
+            android:imeOptions="actionDone"
+            android:inputType="text|textAutoComplete"
+            android:paddingEnd="0dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="0dp"
+            android:paddingStart="20dp"
+            android:textColor="@color/colorPrimaryText"
+            android:textColorHint="@color/colorPrimaryText"
+            android:theme="@style/AlertDialog.AppCompat.Light" />
+
+        <ImageButton
+            android:id="@+id/mainSearchButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundedbutton"
+            android:contentDescription="@string/search_button"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search_logo"
+            android:text="@string/go"
+            android:textColor="@color/colorSecondaryText"
+            android:textStyle="bold" />
+
+    </carbon.widget.LinearLayout>
+
+    <carbon.widget.RelativeLayout
+        android:id="@+id/mainRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/mainListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:choiceMode="none" />
+
+        <carbon.widget.Button
+            android:id="@+id/mainShowCommit"
+            style="@style/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            app:carbon_textAllCaps="false"
+            app:carbon_inAnimation="fly"
+            app:carbon_outAnimation="fly"/>
+
+    </carbon.widget.RelativeLayout>
 
 </LinearLayout>

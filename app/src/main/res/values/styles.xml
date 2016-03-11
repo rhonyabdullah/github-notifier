@@ -26,8 +26,6 @@
 
     <style name="Button" parent="@android:style/Widget.Button">
         <item name="android:gravity">center_vertical|center_horizontal</item>
-        <item name="android:minHeight">36dp</item>
-        <item name="android:minWidth">88dp</item>
         <item name="android:paddingTop">@dimen/button_padding_top</item>
         <item name="android:paddingBottom">@dimen/button_padding_bottom</item>
         <item name="android:background">@color/colorPrimary</item>
@@ -37,7 +35,7 @@
         <item name="carbon_touchMarginTop">6dp</item>
         <item name="carbon_touchMarginBottom">6dp</item>
         <item name="carbon_cornerRadius">5dp</item>
-        <item name="carbon_rippleColor">@color/colorPrimaryDark</item>
+        <item name="carbon_rippleColor">@color/colorPrimaryLight</item>
     </style>
 
 

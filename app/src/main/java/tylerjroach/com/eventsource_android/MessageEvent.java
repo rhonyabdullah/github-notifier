@@ -1,4 +1,4 @@
-package com.labsgn.githubnotifier.eventsource;
+package tylerjroach.com.eventsource_android;
 
 public class MessageEvent {
     public final String data;

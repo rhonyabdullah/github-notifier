@@ -1,9 +1,9 @@
-package com.labsgn.githubnotifier.eventsource.impl;
-
-import com.labsgn.githubnotifier.eventsource.EventSourceHandler;
-import com.labsgn.githubnotifier.eventsource.MessageEvent;
+package tylerjroach.com.eventsource_android.impl;
 
 import java.util.concurrent.Executor;
+
+import tylerjroach.com.eventsource_android.EventSourceHandler;
+import tylerjroach.com.eventsource_android.MessageEvent;
 
 public class AsyncEventSourceHandler implements EventSourceHandler {
     private final Executor executor;

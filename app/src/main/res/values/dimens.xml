@@ -11,5 +11,10 @@
     <dimen name="button_padding_top">10dp</dimen>
     <dimen name="button_padding_bottom">10dp</dimen>
 
+    <dimen name="button_show_margin_bottom">15dp</dimen>
+
     <dimen name="text_size">17sp</dimen>
+
+    <dimen name="search_box_height">65dp</dimen>
+
 </resources>

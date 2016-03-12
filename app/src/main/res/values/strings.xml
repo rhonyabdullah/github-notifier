@@ -11,4 +11,10 @@
     <string name="clear_history">Clear history</string>
     <string name="sign_in">Sign in</string>
     <string name="sign_out">Sign out</string>
+    <string name="this_is_my_commit">This is my commit message, it can be fitted on two lines, do you see what I mean ?</string>
+    <string name="dummy_commit_num">d452eac6b8</string>
+    <string name="dummy_commit_date">Jul 2, 2015 5:08:41 PM</string>
+    <string name="organisation_repository">organisation/repository</string>
+    <string name="pushed_by_the_author">pushed by The Author</string>
+    <string name="title_activity_commits">Commits History</string>
 </resources>

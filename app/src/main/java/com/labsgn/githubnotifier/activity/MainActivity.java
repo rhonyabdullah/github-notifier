@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.SparseBooleanArray;
 import android.util.TypedValue;
 import android.view.KeyEvent;
@@ -58,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
     private boolean hasResult = false;
 
     private ArrayList<String> list, selectedItems;
+
+    private Toolbar mainToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -145,6 +148,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initComponent() {
+        mainToolbar = (Toolbar) findViewById(R.id.mainToolbar);
+        setSupportActionBar(mainToolbar);
+
         mainListView = (ListView) findViewById(R.id.mainListView);
         mainListView.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
         mainListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -268,7 +274,7 @@ public class MainActivity extends AppCompatActivity {
     // ListView Item click handler
     private void onItemClickMainListView(AdapterView<?> parent) {
         hideKeyboard();
-        //Todo ::: intent = new Intent(MainActivity.this, CommitsActivity.class);
+        intent = new Intent(MainActivity.this, CommitsActivity.class);
         if (hasResult){
             selectedItems = new ArrayList<>();
             // Get multiple selected items

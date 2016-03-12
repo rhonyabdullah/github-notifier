@@ -1,20 +1,22 @@
 package com.labsgn.githubnotifier.utlis;
 
+import com.labsgn.githubnotifier.BuildConfig;
+
 /**
  * Created by rhony on 08/03/16.
  */
 public class Constant {
-    public static final String STREAMDATAIO_API_TOKEN = "MY_STREAMDATAIO_API_TOKEN";
+    public static final String STREAMDATAIO_API_TOKEN = BuildConfig.MY_STREAMDATAIO_API_TOKEN;
     public static final String STREAMDATAIO_PROXY_PREFIX = "https://streamdata.motwin.net/";
 
     //GitHub OAuth client public key
-    public static final String GITHUB_CLIENT_PUBLIC_KEY = "MY_GITHUB_CLIENT_PUBLIC_KEY";
+    public static final String GITHUB_CLIENT_PUBLIC_KEY = BuildConfig.MY_GITHUB_CLIENT_PUBLIC_KEY;
 
     //GitHub OAuth client secret key
-    public static final String GITHUB_CLIENT_SECRET_KEY = "MY_GITHUB_CLIENT_SECRET_KEY";
+    public static final String GITHUB_CLIENT_SECRET_KEY = BuildConfig.MY_GITHUB_CLIENT_SECRET_KEY;
 
     //GitHub access token for public utilization this token allows only to read public repos
-    public static final String GITHUB_PUBLIC_TOKEN = "MY_GITHUB_PUBLIC_TOKEN";
+    public static final String GITHUB_PUBLIC_TOKEN = BuildConfig.MY_GITHUB_PUBLIC_TOKEN;
 
     //Host-URI of LoginActivity Web View
     public static final String GITHUB_REDIRECT_URI = "your://redirecturi";

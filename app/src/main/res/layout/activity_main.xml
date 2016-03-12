@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,13 +9,25 @@
 
     <include layout="@layout/status_bar" />
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        style="@style/ToolbarTheme"
+        android:paddingEnd="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingStart="10dp"
+        android:title="@string/app_name"
+        app:navigationIcon="@mipmap/ic_launcher"
+        app:theme="@style/ToolbarTheme" />
+
     <carbon.widget.LinearLayout
         android:id="@+id/mainSearchBox"
         android:layout_width="match_parent"
         android:layout_height="@dimen/search_box_height"
         android:background="@color/colorBgSearchBox"
         android:gravity="center_horizontal"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:carbon_elevation="@dimen/carbon_elevationMedium">
 
         <EditText
             android:id="@+id/mainSearchField"
@@ -71,10 +83,10 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:visibility="gone"
-            app:carbon_textAllCaps="false"
             app:carbon_inAnimation="fly"
-            app:carbon_outAnimation="fly"/>
+            app:carbon_outAnimation="fly"
+            app:carbon_textAllCaps="false" />
 
     </carbon.widget.RelativeLayout>
 
-</LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">Github Notifier</string>
+    <string name="app_name">G.Notifier</string>
+    <string name="login_sign_in">Sign in to Github</string>
+    <string name="login_skip_login">Watch Commit</string>
+    <string name="title_activity_login">Authentication</string>
+    <string name="find_repositories_hint">Find repositories…</string>
+    <string name="go">Go</string>
+    <string name="search_button">SearchButton</string>
+    <string name="show_commits">Show Commits</string>
+    <string name="too_many_repos">Too many repos</string>
+    <string name="clear_history">Clear history</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_out">Sign out</string>
+    <string name="this_is_my_commit">This is my commit message, it can be fitted on two lines, do you see what I mean ?</string>
+    <string name="dummy_commit_num">d452eac6b8</string>
+    <string name="dummy_commit_date">Jul 2, 2015 5:08:41 PM</string>
+    <string name="organisation_repository">organisation/repository</string>
+    <string name="pushed_by_the_author">pushed by The Author</string>
+    <string name="title_activity_commits">Commits History</string>
 </resources>

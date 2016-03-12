@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:paddingBottom="5dp"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp"
+    android:paddingTop="10dp">
+
+
+    <TextView
+        android:id="@+id/commit_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_single_commit_layout"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="false"
+        android:text="@string/this_is_my_commit"
+        android:textColor="#000"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/top_single_commit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/commit_id"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:lines="1"
+            android:paddingEnd="0dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="0dp"
+            android:paddingStart="5dp"
+            android:singleLine="true"
+            android:text="@string/dummy_commit_num"
+            android:textColor="#888"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/commit_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:gravity="end"
+            android:lines="1"
+            android:paddingEnd="5dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="5dp"
+            android:paddingStart="0dp"
+            android:singleLine="true"
+            android:text="@string/dummy_commit_date"
+            android:textColor="#888"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/commit_message"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/commit_repoid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.55"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingEnd="7dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="7dp"
+            android:paddingStart="5dp"
+            android:singleLine="true"
+            android:text="@string/organisation_repository"
+            android:textColor="#FFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/commit_author"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:gravity="right"
+            android:lines="1"
+            android:paddingEnd="3dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="3dp"
+            android:paddingStart="7dp"
+            android:singleLine="true"
+            android:text="@string/pushed_by_the_author"
+            android:textColor="#888"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

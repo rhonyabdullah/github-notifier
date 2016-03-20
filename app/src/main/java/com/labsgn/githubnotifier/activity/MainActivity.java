@@ -184,8 +184,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean onClickMainSearchField(int actionId) {
+        mainShowCommitButton.setVisibility(View.GONE);
+        hideKeyboard();
+
         if (actionId == EditorInfo.IME_ACTION_DONE){
-            hideKeyboard();
             String searchSentence = ((EditText)findViewById(R.id.mainSearchField)).getText().toString();
 
             if (searchSentence.isEmpty()){return false;}
@@ -225,6 +227,7 @@ public class MainActivity extends AppCompatActivity {
             }
             catch (RequestException e) {
                 // GitHub api token may be out-of-date --> restart oauth procedure
+                Logger.log_e(className, e.toString());
                 signIn(null);
             }
             catch (IOException e) {
@@ -360,8 +363,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void onClickMainSearchButton() {
-        mainShowCommitButton.setVisibility(View.GONE);
-        hideKeyboard();
+        onClickMainSearchField(EditorInfo.IME_ACTION_DONE);
     }
 
     public void hideKeyboard() {
